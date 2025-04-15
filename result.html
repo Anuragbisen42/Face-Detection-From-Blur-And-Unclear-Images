@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="title"><img src="./assets/logo.png" alt=""></div>
+        <div class="links">
+            <a href="./">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+        </div> 
+    </div>
+
+    <div class="loading" id="loading">
+        <div>
+            <img src="./assets/loading.gif" alt="Loading">
+        </div>
+    </div>
+
+    <div id="content" style="display:none;">
+        <div class="imgContainer">
+            <div  id="inputContainer">
+            Input<br>
+            <img src="./inputs/whole_imgs/input.jpg" alt="Image">
+        </div>
+        <div id="outputContainer">
+            Output<br>
+            <img src="./results/res/output.jpg" alt="Image">
+        </div>
+        </div>
+        <div id="spanContainer">
+            <span id="totalFaces"></span>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+            &copy; Cyber Cell MP
+        </div>
+    </footer>
+    <script>
+        // Show loading animation for 10 seconds
+        setTimeout(function () {
+            let totalFaces = localStorage.getItem("totalFaces");
+            document.getElementById('loading').style.display = 'none';
+            // if(totalFaces > 0){
+            document.getElementById('content').style.display = 'flex';
+            document.getElementById("inputContainer").innerHTML = `
+            Input<br>
+            <img src="./inputs/whole_imgs/input.jpg" alt="Image">`
+            document.getElementById("outputContainer").innerHTML  =`Output<br>
+            <img src="./results/res/output.jpg" alt="Image">`
+            // }else{
+            // document.getElementById('errorDia').style.display = 'flex';
+            // }
+        }, 45000);
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</body>
+
+</html>
