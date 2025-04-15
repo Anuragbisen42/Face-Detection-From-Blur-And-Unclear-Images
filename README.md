@@ -155,13 +155,5 @@ If our work is useful for your research, please consider citing:
         year = {2022}
     }
 
-### License
 
-This project is licensed under <a rel="license" href="https://github.com/sczhou/CodeFormer/blob/master/LICENSE">NTU S-Lab License 1.0</a>. Redistribution and use should follow this license.
-
-### Acknowledgement
-
-This project is based on [BasicSR](https://github.com/XPixelGroup/BasicSR). Some codes are brought from [Unleashing Transformers](https://github.com/samb-t/unleashing-transformers), [YOLOv5-face](https://github.com/deepcam-cn/yolov5-face), and [FaceXLib](https://github.com/xinntao/facexlib). We also adopt [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) to support background image enhancement. Thanks for their awesome works.
-
-### Contact
-If you have any questions, please feel free to reach me out at `shangchenzhou@gmail.com`. 
+ 
